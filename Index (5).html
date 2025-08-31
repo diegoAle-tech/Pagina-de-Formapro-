@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contacto</title>
+  <link rel="stylesheet" href="css/Style5.css" />
+</head>
+<body>
+<header>
+    <div class="logo-container">
+        <img src="file:///C:/Users/Diego%20Maldonado/Desktop/Pagina%20de%20Formapro/LOGO%20300px.jpg" alt="logo">
+        <div class="logo-text">FORMAPRO</div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="file:///C:/Users/Diego%20Maldonado/Desktop/Pagina%20de%20Formapro/Index.html">Inicio</a></li>
+            <li><a href="file:///C:/Users/Diego%20Maldonado/Desktop/Pagina%20de%20Formapro/Index%20(2).html">Cursos de Tecnología</a></li>
+            <li><a href="file:///C:/Users/Diego%20Maldonado/Desktop/Pagina%20de%20Formapro/Index%20(3).html">Cursos de Inglés</a></li>
+            <li><a href="file:///C:/Users/Diego%20Maldonado/Desktop/Pagina%20de%20Formapro/Index%20(4).html">Nosotros</a></li>
+            <li><a href="file:///C:/Users/Diego%20Maldonado/Desktop/Pagina%20de%20Formapro/Index%20(5).html">Contacto</a></li>
+            <li><a href="file:///C:/Users/Diego%20Maldonado/Desktop/Pagina%20de%20Formapro/Index%20(6).html">Opiniones</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+  <div class="form-section">
+    <div class="overlay"></div>
+    <div class="form-container">
+      <form id="miFormulario">
+        <h2>Bienvenido a FORMAPRO</h2>
+
+        <label for="nombre">Escribe tu nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required />
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required />
+
+        <label for="ocupacion">Haz click para una ocupación:</label>
+        <select id="ocupacion" name="ocupacion" required>
+          <option value="">Selecciona una ocupación</option>
+          <option value="estudiante">Estudiante</option>
+          <option value="profesor">Profesor(a)</option>
+          <option value="empleado">Empleado(a)</option>
+          <option value="otros">Otros</option>
+        </select>
+
+        <label for="interes">Elige un curso de tu interés:</label>
+        <select id="interes" name="interes" required>
+          <option value="">Selecciona un curso</option>
+          <option value="informatica">Informática para el Ambiente Laboral</option>
+          <option value="diseno">Diseño Gráfico Digital</option>
+          <option value="maquetacion">Maquetación Web</option>
+          <option value="prototipado">Prototipado 3D</option>
+          <option value="mantenimiento">Mantenimiento y Reparación de Computadoras</option>
+          <option value="ingles">Idioma Inglés</option>
+        </select>
+
+        <label for="comentarios">Comentarios Adicionales:</label>
+        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+        <button type="submit">ENVIAR</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzVuHUG5Bkwv89FQE_cKVyxYmoR1ryyHXfRvJGwXLECtDuxqinbrkBcIje_yPHy1zxDlg/exec'; // Aquí va tu URL
+    
+    const form = document.getElementById('miFormulario');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form)
+      })
+      .then(response => alert("Datos enviados correctamente"))
+      .catch(error => alert("Hubo un error"));
+    });
+  </script>
+
+  
+</body>
+</html>
