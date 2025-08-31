@@ -1,0 +1,247 @@
+    button {
+    background-color: lightgray;
+    border: 1px solid #000000;
+    font-size: 12px;
+    padding: 10px 20px;
+    }
+
+    .cursosdestacados{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
+    top: 10%;
+    text-align: center;
+    padding: 1px 1px;
+    }     
+
+   header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;        
+    padding: 10px 20px;
+    }
+        
+    .logo-container {
+    display: flex;          
+    align-items: center;   
+    font-family: 'Segoe UI', sans-serif;
+    }
+        
+    .logo-container img {
+    width: auto;          
+    height: 50px;         
+    margin-right: 30px;   
+            
+    }
+        
+    .logo-text {
+    font-weight: bold;
+    font-size: 24px;   
+    color:#00264D;  
+    }
+         
+    nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    font-family: 'Segoe UI', sans-serif;
+    }
+        
+    nav a {
+    padding: 12px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    background-color: #ffffff;;
+    transition: filter 0.3s, color 0.3s;
+    }
+        
+    nav a:hover {
+    filter: brightness(85%);
+    color: #000;
+    }   
+
+
+
+   .card-container {
+    display: flex;
+    gap: 40px; /* Espacio entre tarjetas */
+    flex-wrap: wrap; /* Para que en pantallas pequeñas se acomoden verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    margin: 80px;
+    color: #000000;
+    }
+
+    .card {
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 1.5em;
+    }
+    
+    .card:hover {
+    transform: scale(1.1);
+    }
+
+    .card {
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+
+    }
+
+    .card-image {
+    position: relative;
+    }
+
+    .card-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card-title {
+      position: absolute;
+      bottom: 10px;
+      left: 15px;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .card-content {
+      padding: 15px;
+      font-size: 14px;
+      color: #000000;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 70px 50px;
+        background-color: #00264D;
+        color: white;
+        font-family: 'Segoe UI', sans-serif;
+    }
+    .texto {
+        font-size: 30px;
+        max-width: 60%; 
+        margin-right: 20px; 
+    }
+    .imagen {
+        max-width: 400px; 
+        width: 75%; 
+        height: auto;
+        flex: 1;
+        text-align: center;
+    }
+        .imagen img {
+        display: block; 
+        width: 100%; 
+        height: auto;
+        max-width: none;
+    }
+
+
+    
+.carousel {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  height: 380px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-family: 'Segoe UI', sans-serif;
+  top: 50%;
+  margin-bottom: 80px;
+}
+
+.carousel-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.carousel-slide h2 {
+  margin: 0;
+  font-size: 2.0em;
+}
+
+.carousel-slide p {
+  margin-top: 10px;
+  font-size: 1.0em;
+  
+}
+
+.red    {
+  background-image: url(file:///C:/Users/Diego%20Maldonado/Desktop/Pagina%20de%20Formapro/Imagenes/Informatica.jpg);
+  background-size: 100px 100px;
+  background-size: 100% 100%;
+}
+.orange { 
+  background-image: url(file:///C:/Users/Diego%20Maldonado/Desktop/Pagina%20de%20Formapro/Imagenes/Ingles.jpg);
+  background-size: 115px 140px;
+  background-size: 140% 140%; }
+.green  { 
+  background-image: url(file:///C:/Users/Diego%20Maldonado/Desktop/Pagina%20de%20Formapro/Imagenes/Dise%C3%B1o.jpg);
+  background-size: 115px 140px;
+  background-size: 140% 140%; }
+.blue   { 
+  background-image: url(file:///C:/Users/Diego%20Maldonado/Desktop/Pagina%20de%20Formapro/Imagenes/Intermedio.jpg);
+  background-size: 115px 140px;
+  background-size: 140% 140%;}
+
+.cta-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 25px;
+  font-size: 1.1em;
+  background-color: #ffffffcc;
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.cta-button:hover {
+  background-color: #ffffff;
+  
+}    
+
+.textt {
+  padding: 40px 40px; 
+  font-weight: bold;
+}
